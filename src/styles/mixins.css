@@ -1,0 +1,27 @@
+@svg square {
+  @rect {
+    fill: var(--color, black);
+    width: var(--size);
+    height: var(--size);
+  }
+}
+
+@svg 1px-border {
+  height: 2px;
+
+  @rect {
+    fill: var(--color, black);
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.example-square {
+  background: white svg(square param(--color #00b1ff) param(--size 100%)) center /
+    cover;
+}
+
+.example-1px-border {
+  border: 1px solid transparent;
+  border-image: svg(1px-border param(--color #00b1ff)) 2 2 stretch;
+}
