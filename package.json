@@ -10,7 +10,11 @@
     "precommit": "pretty-quick --staged"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "fastclick": "^1.0.6",
     "lodash": "^4.17.10",
+    "normalize.css": "^8.0.0",
+    "path-to-regexp": "^2.2.1",
     "vue": "^2.5.16",
     "vue-router": "^3.0.1"
   },
