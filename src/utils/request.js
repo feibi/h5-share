@@ -4,9 +4,9 @@ import pathToRegexp from 'path-to-regexp';
 import {baseURL} from './config';
 
 const fetch = options => {
-  let {method = 'get', data, fetchType, url} = options;
+  let {method = 'get', data, headers, fetchType, url} = options;
 
-  const cloneData = _.cloneDeep(data);
+  const cloneData = {...data};
 
   try {
     let domin = '';
@@ -34,6 +34,12 @@ const fetch = options => {
 
   service.interceptors.request.use(
     config => {
+      if (headers) {
+        config.headers = {
+          ...config.headers,
+          ...headers
+        };
+      }
       return config;
     },
     err => {
@@ -92,7 +98,6 @@ export default function request(options) {
         // success: true,
         // message: statusText,
         // statusCode: status,
-        // requ
         ...data
       });
     })
