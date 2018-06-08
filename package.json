@@ -16,7 +16,9 @@
     "normalize.css": "^8.0.0",
     "path-to-regexp": "^2.2.1",
     "vue": "^2.5.16",
-    "vue-router": "^3.0.1"
+    "vue-lazyload": "^1.2.4",
+    "vue-router": "^3.0.1",
+    "vue-swipe": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.15",

@@ -7384,6 +7384,10 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/vue-hot-reload-api/download/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
 
+vue-lazyload@^1.2.4:
+  version "1.2.4"
+  resolved "http://registry.npm.taobao.org/vue-lazyload/download/vue-lazyload-1.2.4.tgz#e6c8de1e6e11ef6f61a9bbcee508b893586215ef"
+
 vue-loader@^15.2.0:
   version "15.2.4"
   resolved "http://registry.npm.taobao.org/vue-loader/download/vue-loader-15.2.4.tgz#a7b923123d3cf87230a8ff54a1c16d31a6c5dbb4"
@@ -7404,6 +7408,12 @@ vue-style-loader@^4.1.0:
   dependencies:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
+
+vue-swipe@^2.4.0:
+  version "2.4.0"
+  resolved "http://registry.npm.taobao.org/vue-swipe/download/vue-swipe-2.4.0.tgz#af65420417cc65a21a454022f755cb5d661c56ea"
+  dependencies:
+    wind-dom "0.0.3"
 
 vue-template-compiler@^2.5.16:
   version "2.5.16"
@@ -7574,6 +7584,10 @@ wide-align@^1.1.0:
   resolved "http://registry.npm.taobao.org/wide-align/download/wide-align-1.1.3.tgz#ae074e6bdc0c14a431e804e624549c633b000457"
   dependencies:
     string-width "^1.0.2 || 2"
+
+wind-dom@0.0.3:
+  version "0.0.3"
+  resolved "http://registry.npm.taobao.org/wind-dom/download/wind-dom-0.0.3.tgz#3456e3d959dbebdcbf76ca68c6a4e8142f26360f"
 
 wordwrap@~1.0.0:
   version "1.0.0"
