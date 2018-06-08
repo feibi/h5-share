@@ -4,9 +4,10 @@ import FastClick from 'fastclick';
 
 import App from './App.vue';
 import routes from './routes';
+import {get} from 'lodash';
 
 import 'normalize.css/normalize.css';
-import './styles/mixins.css';
+import './styles/index.css';
 
 if ('addEventListener' in document) {
   document.addEventListener(
@@ -19,7 +20,7 @@ if ('addEventListener' in document) {
 }
 
 Vue.config.productionTip = false;
-
+Vue.prototype.$lodash = {get};
 Vue.use(VueRouter);
 const router = new VueRouter({
   mode: 'history',

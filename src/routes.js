@@ -1,7 +1,6 @@
 import House from './pages/house';
 import NoFind from './pages/404';
 const routes = [
-  //   {path: '/house', component: () => import('./pages/house')},
   {
     path: '/house/:id',
     component: () => import('./pages/house/detail')
