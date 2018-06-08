@@ -6,7 +6,7 @@ import {baseURL} from './config';
 const fetch = options => {
   let {method = 'get', data, fetchType, url} = options;
 
-  const cloneData = _.cloneDeep(data);
+  const cloneData = {...data};
 
   try {
     let domin = '';
