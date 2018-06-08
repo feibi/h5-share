@@ -4,7 +4,7 @@ import pathToRegexp from 'path-to-regexp';
 import {baseURL} from './config';
 
 const fetch = options => {
-  let {method = 'get', data, headers, fetchType, url} = options;
+  let {method = 'get', data, headers, url} = options;
 
   const cloneData = {...data};
 
@@ -23,6 +23,7 @@ const fetch = options => {
     }
     url = domin + url;
   } catch (e) {
+    /* eslint-disable */
     console.error(e.message);
   }
 
@@ -54,6 +55,7 @@ const fetch = options => {
       if (error.response) {
         switch (error.response.status) {
           case 401:
+            /* eslint-disable */
             console.error('无权限');
             break;
           default:

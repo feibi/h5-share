@@ -98,7 +98,7 @@ export default {
   padding: 0 10px;
   flex: 1;
   text-decoration: none;
-  background: linear-gradient(right, #ec4b39, #ff2c52);
+  background: linear-gradient(to left, #ec4b39, #ff2c52);
 }
 </style>
 
